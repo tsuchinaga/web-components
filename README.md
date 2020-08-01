@@ -12,3 +12,6 @@
 * popup-info-box
     * 画像要素のhoverしたらポップアップでカスタムエレメントに指定した文字列が表示される
     * 参考: [Pop-up info box — web components](https://mdn.github.io/web-components-examples/popup-info-box-web-component/)
+* expanding-list
+    * ulとliをつかって、開いたり閉じたりできるUIを実現してる
+    * 参考: [Expanding list web component](https://mdn.github.io/web-components-examples/expanding-list-web-component/)
