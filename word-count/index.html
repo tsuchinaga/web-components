@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple word count web component</title>
+</head>
+<body>
+<h1>Word count rating widget</h1>
+<article contenteditable="true">
+    <h2>Sample is heading</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pulvinar sed justo sed viverra. Aliquam ac
+        scelerisque tellus. Vivamus porttitor nunc vel nibh rutrum hendrerit. Donec viverra vestibulum pretium. Mauris
+        at eros vitae ante pellentesque bibendum. Etiam et blandit purus, nec aliquam libero. Etiam leo felis, pulvinar
+        et diam id, sagittis pulvinar diam. Nunc pellentesque rutrum sapien, sed faucibus urna sodales in. Sed tortor
+        nisl, egestas nec egestas luctus, faucibus vitae purus. Ut elit nunc, pretium eget fermentum id, accumsan et
+        velit. Sed mattis velit diam, a elementum nunc facilisis sit amet.
+    </p>
+    <p is="word-count"></p>
+</article>
+<script>
+    // Create a class for the element
+    class WordCount extends HTMLParagraphElement {
+        constructor() {
+            super();
+
+            function countWords(node) {
+                const text = node.innerText || node.textContent;
+                return text.split(/\s+/g).length;
+            }
+
+            const wcParent = this.parentNode;
+            const text = document.createElement("span");
+            text.textContent = `Words: ${countWords(wcParent)}`;
+
+            const shadow = this.attachShadow({mode: "open"});
+            shadow.appendChild(text);
+
+            setInterval(function () {
+                text.textContent = `Words: ${countWords(wcParent)}`;
+            }, 200)
+        }
+    }
+
+    customElements.define("word-count", WordCount, {extends: "p"});
+</script>
+</body>
+</html>

@@ -4,3 +4,8 @@
 
 を読みながら、写経できるところはやっていく。  
 複雑なJavaScriptフレームワークに依存することなくコンポーネント指向なHTMLが書けるのが目標。
+
+## 写経
+* word-count
+    * 単語のカウントをして数を表示するカスタムエレメントの例
+    * 参考: [Simple word count web component](https://mdn.github.io/web-components-examples/word-count-web-component/)
