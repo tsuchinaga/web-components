@@ -9,3 +9,6 @@
 * word-count
     * 単語のカウントをして数を表示するカスタムエレメントの例
     * 参考: [Simple word count web component](https://mdn.github.io/web-components-examples/word-count-web-component/)
+* popup-info-box
+    * 画像要素のhoverしたらポップアップでカスタムエレメントに指定した文字列が表示される
+    * 参考: [Pop-up info box — web components](https://mdn.github.io/web-components-examples/popup-info-box-web-component/)
