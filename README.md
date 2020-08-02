@@ -15,3 +15,6 @@
 * expanding-list
     * ulとliをつかって、開いたり閉じたりできるUIを実現してる
     * 参考: [Expanding list web component](https://mdn.github.io/web-components-examples/expanding-list-web-component/)
+* life-cycle-callbacks
+    * どのタイミングでどのcallbackが呼ばれるかがだいたいわかる
+    * [Life cycle callbacks test](https://mdn.github.io/web-components-examples/life-cycle-callbacks/)
