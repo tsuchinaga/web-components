@@ -18,3 +18,5 @@
 * life-cycle-callbacks
     * どのタイミングでどのcallbackが呼ばれるかがだいたいわかる
     * [Life cycle callbacks test](https://mdn.github.io/web-components-examples/life-cycle-callbacks/)
+* template-example
+    * テンプレートをつかってShadow DOMを使う例
