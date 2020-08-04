@@ -23,3 +23,6 @@
 * simple-tempalte
     * templateとslotとWeb componentを使って自由度の高いテンプレートを使う
     * [Simple template](https://mdn.github.io/web-components-examples/simple-template/)
+* element-details
+    * templateとslotを使い、JavaScriptをほとんど使わずに動くページが作れてる
+    * [element-details - web component using <template> and <slot>](https://mdn.github.io/web-components-examples/element-details/)
