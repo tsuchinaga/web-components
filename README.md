@@ -20,3 +20,6 @@
     * [Life cycle callbacks test](https://mdn.github.io/web-components-examples/life-cycle-callbacks/)
 * template-example
     * テンプレートをつかってShadow DOMを使う例
+* simple-tempalte
+    * templateとslotとWeb componentを使って自由度の高いテンプレートを使う
+    * [Simple template](https://mdn.github.io/web-components-examples/simple-template/)
