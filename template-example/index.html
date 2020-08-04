@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template example</title>
+</head>
+<body>
+{{/*テンプレートはDOMになってもレンダーされないがスタイルが書ける*/}}
+<template id="my-paragraph">
+    <style>
+        p {
+            color: white;
+            background-color: #666;
+            padding: 5px;
+        }
+    </style>
+    <p>My paragraph</p>
+</template>
+
+{{/*id指定でテンプレートを取得し、その子要素をmy-paragraphエレメントの配下につける*/}}
+<script>
+    customElements.define("my-paragraph",
+        class extends HTMLElement {
+            constructor() {
+                super();
+                this.attachShadow({mode: "open"})
+                    .appendChild(document.getElementById("my-paragraph").content.cloneNode(true))
+            }
+        })
+</script>
+
+{{/*中身はWeb Componentによって入れられる*/}}
+<my-paragraph></my-paragraph>
+</body>
+</html>
